@@ -1,21 +1,12 @@
-/*
- * File System Representation and Search Using BFS and DFS
- * Activity ID: SY-S3-B-09
- *
- * Each file/directory is a node; each parent->child link is an edge.
- * The graph is stored as an adjacency matrix.
- */
 #include <stdio.h>
 #include <string.h>
 
 #define MAX 50
 #define NAME_LEN 32
 
-int  n;                          /* number of nodes            */
-char names[MAX][NAME_LEN];       /* node names                 */
-int  adj[MAX][MAX];              /* adjacency matrix           */
-
-/* Return index of a node by name, or -1 if not present */
+int  n;                          
+char names[MAX][NAME_LEN];       
+int  adj[MAX][MAX];                      
 int findIndex(const char *name) {
     for (int i = 0; i < n; i++)
         if (strcmp(names[i], name) == 0)
@@ -76,7 +67,6 @@ int dfs(int start, const char *target) {
     return found;
 }
 
-/* Print the adjacency matrix */
 void printMatrix(void) {
     printf("\nAdjacency Matrix:\n      ");
     for (int i = 0; i < n; i++) printf("%-6.5s", names[i]);
@@ -117,7 +107,7 @@ int main(void) {
             printf("  Unknown node in edge (%s, %s) - skipped.\n", a, b);
             continue;
         }
-        adj[u][v] = 1;   /* directed: parent -> child */
+        adj[u][v] = 1;   
     }
 
     printMatrix();
