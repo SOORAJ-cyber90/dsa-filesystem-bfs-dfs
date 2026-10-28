@@ -1,0 +1,13 @@
+9
+root docs pics src report.pdf photo.jpg main.c util.c notes.txt
+8
+root docs
+root pics
+root src
+docs report.pdf
+docs notes.txt
+pics photo.jpg
+src main.c
+src util.c
+root
+main.c

@@ -1,0 +1,22 @@
+Enter number of files/directories (max 50): Enter the names of the 9 nodes:
+Enter number of connections (edges): Enter each edge as: parent child
+
+Adjacency Matrix:
+      root  docs  pics  src   repor photo main. util. notes 
+root  0     1     1     1     0     0     0     0     0     
+docs  0     0     0     0     1     0     0     0     1     
+pics  0     0     0     0     0     1     0     0     0     
+src   0     0     0     0     0     0     1     1     0     
+repor 0     0     0     0     0     0     0     0     0     
+photo 0     0     0     0     0     0     0     0     0     
+main. 0     0     0     0     0     0     0     0     0     
+util. 0     0     0     0     0     0     0     0     0     
+notes 0     0     0     0     0     0     0     0     0     
+
+Enter starting node: Enter file to search: 
+--- Search for 'video.mp4' starting from 'root' ---
+BFS traversal: root docs pics src report.pdf notes.txt photo.jpg main.c util.c 
+BFS result: File NOT found
+
+DFS traversal: root docs report.pdf notes.txt pics photo.jpg src main.c util.c 
+DFS result: File NOT found
