@@ -1,6 +1,6 @@
 # File System Representation and Search Using BFS and DFS
 
-**Activity ID:** SY-S3-B-09 | Data Structures and Algorithms | UKF College of Engineering & Technology
+**Activity Data Structures and Algorithms | UKF College of Engineering & Technology
 
 A C program that models a file system as a graph (adjacency matrix) and searches for a file using Breadth-First Search (BFS) and Depth-First Search (DFS).
 
